@@ -1,4 +1,38 @@
 body {
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  color: #212121;
+}
+
+:root {
+  --nav-links-color: #212121;
+  --links-color-hover: #2196f3;
+  --contact-info-links: #757575;
+}
+.nav-links {
+  line-height: 1.14;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+.nav-links .link {
+  color: var(--nav-links-color);
+  text-decoration: none;
+}
+.nav-links .link:hover,
+.nav-links .link:focus {
+  color: var(--links-color-hover);
+}
+.contact-info {
+  line-height: 1.14;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+.contact-info .link-info {
+  color: var(--contact-info-links);
+  text-decoration: none;
+}
+.contact-info .link-info:hover,
+.contact-info .link-info:focus {
+  color: var(--links-color-hover);
 }
