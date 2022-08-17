@@ -4,9 +4,13 @@ body {
 }
 
 :root {
-  --nav-links-color: #212121;
-  --links-color-hover: #2196f3;
-  --contact-info-links: #757575;
+  --black: #212121;
+  --blue: #2196f3;
+  --grey: #757575;
+}
+.active-link {
+  color: var(--blue);
+  text-decoration: none;
 }
 .nav-links {
   line-height: 1.14;
@@ -15,12 +19,12 @@ body {
   letter-spacing: 0.02em;
 }
 .nav-links .link {
-  color: var(--nav-links-color);
+  color: var(--black);
   text-decoration: none;
 }
 .nav-links .link:hover,
 .nav-links .link:focus {
-  color: var(--links-color-hover);
+  color: var(--blue);
 }
 .contact-info {
   line-height: 1.14;
@@ -29,10 +33,10 @@ body {
   letter-spacing: 0.02em;
 }
 .contact-info .link-info {
-  color: var(--contact-info-links);
+  color: var(--grey);
   text-decoration: none;
 }
 .contact-info .link-info:hover,
 .contact-info .link-info:focus {
-  color: var(--links-color-hover);
+  color: var(--blue);
 }
