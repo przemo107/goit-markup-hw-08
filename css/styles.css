@@ -5,24 +5,43 @@ body {
 
 :root {
   --black: #212121;
+  --black-logo: #000000;
   --blue: #2196f3;
   --grey: #757575;
   --white: #ffffff;
   --background-dark: #2f303a;
   --background-light: #f5f4fa;
-  --background-team: #f5f4fa;
 }
 .main-background {
   background-color: var(--white);
 }
-.h1-style {
+.logo-web {
+  font-family: 'Raleway';
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo-studio {
+  font-family: 'Raleway';
+  color: var(--black-logo);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.main-header {
   background-color: var(--background-dark);
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
-  letter-spacing: 0.6em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+}
+.button-list {
+  list-style-type: none;
 }
 .btn {
   color: var(--white);
@@ -31,6 +50,39 @@ body {
   background-color: var(--blue);
   text-align: center;
   cursor: pointer;
+  border-width: 0px;
+}
+.btn-filter {
+  background-color: var(--background-light);
+  color: var(--black);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  border-width: 0px;
+}
+.button-list .btn-filter:hover,
+.button-list .btn-filter:focus {
+  color: var(--white);
+  background-color: var(--blue);
+}
+.active-btn-filter {
+  color: var(--white);
+  background-color: var(--blue);
+}
+.project-list {
+  list-style-type: none;
+}
+.about-header {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.about-description {
+  color: var(--grey);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 .about {
   background-color: var(--white);
@@ -40,7 +92,7 @@ body {
   background-color: var(--background-light);
   list-style-type: none;
 }
-.section-header {
+.secondary-header {
   color: var(--black);
   font-weight: 700;
   font-size: 36px;
@@ -109,4 +161,12 @@ body {
 
 .footer {
   background-color: var(--background-dark);
+}
+.logo-studio-footer {
+  font-family: 'Raleway';
+  color: var(--white);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
