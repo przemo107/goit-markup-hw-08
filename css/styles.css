@@ -53,6 +53,7 @@ body {
   border-width: 0px;
 }
 .btn-filter {
+  font-family: 'Roboto', sans-serif;
   background-color: var(--background-light);
   color: var(--black);
   font-weight: 700;
