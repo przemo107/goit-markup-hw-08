@@ -14,7 +14,7 @@ body {
 }
 .container {
   width: 1200px;
-  text-align: center;
+  /* text-align: center; */
 }
 .main-background {
   background-color: var(--white);
@@ -106,7 +106,10 @@ body {
 .about {
   background-color: var(--white);
   list-style-type: none;
+  display: flex;
+  gap: 30px;
 }
+
 .team {
   background-color: var(--background-light);
   list-style-type: none;
