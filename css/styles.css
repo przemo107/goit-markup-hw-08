@@ -19,7 +19,7 @@ body {
 }
 .container {
   width: 1200px;
-  /* text-align: center; */
+  margin: auto;
 }
 .main-background {
   background-color: var(--white);
@@ -53,6 +53,12 @@ body {
   text-transform: uppercase;
   text-align: center;
   line-height: 1.36;
+}
+.header-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 452px 280px;
 }
 .header {
   display: flex;
@@ -108,17 +114,26 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.71;
 }
-.about {
+.skills {
   background-color: var(--white);
   list-style-type: none;
   display: flex;
   gap: 30px;
 }
-
+.about {
+  background-color: var(--white);
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 .team {
   background-color: var(--background-light);
+  display: flex;
+  justify-content: center;
   list-style-type: none;
   line-height: 1.18;
+  gap: 30px;
 }
 .secondary-header {
   color: var(--black);
