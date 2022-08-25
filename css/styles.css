@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--black);
+  background-color: var(--background-lightgrey);
 }
 * {
   box-sizing: border-box;
@@ -16,10 +17,16 @@ body {
   --white: #ffffff;
   --background-dark: #2f303a;
   --background-light: #f5f4fa;
+  --background-lightgrey: #e5e5e5;
 }
 .container {
   width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+}
+.wrapper {
+  background-color: var(--white);
+  width: 1600px;
+  margin: 0 auto;
 }
 .main-background {
   background-color: var(--white);
@@ -47,23 +54,29 @@ body {
 .main-header {
   background-color: var(--background-dark);
   color: var(--white);
-  font-weight: 900;
-  font-size: 44px;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding: 200px 0;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-header-text {
+  font-size: 44px;
+  font-weight: 900;
   text-align: center;
   line-height: 1.36;
-}
-.header-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 200px 452px 280px;
+  letter-spacing: 0.06em;
 }
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 93px;
+  flex-direction: row;
+  padding: 25px 0 24px 0;
+  display: flex;
 }
 .button-list {
   list-style-type: none;
@@ -75,8 +88,11 @@ body {
   background-color: var(--blue);
   text-align: center;
   cursor: pointer;
-  border-width: 0px;
+  border-style: none;
+  border-radius: 4px;
   line-height: 1.87;
+  width: 200px;
+  height: 50px;
 }
 .btn-filter {
   font-family: 'Roboto', sans-serif;
@@ -184,8 +200,8 @@ body {
   list-style-type: none;
   line-height: 1.14;
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  padding: 0;
+  gap: 46px;
 }
 .nav-links .link {
   color: var(--black);
@@ -202,6 +218,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--white);
   line-height: 1.14;
+  gap: 50px;
+  padding: 0 0 0 278px;
+  margin: 0;
+  display: flex;
 }
 .contact-info .link-info {
   color: var(--grey);
