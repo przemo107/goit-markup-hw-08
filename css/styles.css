@@ -83,7 +83,9 @@ body {
 }
 .btn {
   color: var(--white);
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  font-size: 16px;
   letter-spacing: 0.06em;
   background-color: var(--blue);
   text-align: center;
@@ -123,6 +125,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   line-height: 1.14;
+  margin: 0 0 10px 0;
 }
 .about-description {
   color: var(--grey);
@@ -134,14 +137,26 @@ body {
   background-color: var(--white);
   list-style-type: none;
   display: flex;
+  padding: 94px 0 0 0;
+  justify-content: center;
   gap: 30px;
 }
 .about {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  padding: 94px 0;
+}
+.about-list {
   background-color: var(--white);
   list-style-type: none;
   display: flex;
   justify-content: center;
   gap: 30px;
+}
+.team-background {
+  background-color: var(--background-light);
+  padding: 94px 0;
 }
 .team {
   background-color: var(--background-light);
@@ -150,8 +165,18 @@ body {
   list-style-type: none;
   line-height: 1.18;
   gap: 30px;
+  padding: 50px 0;
 }
-.secondary-header {
+.secondary-header-about {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.16;
+  margin: 0px 0 50px 0;
+}
+.secondary-header-team {
   color: var(--black);
   font-weight: 700;
   font-size: 36px;
@@ -162,18 +187,22 @@ body {
 .team-name {
   color: var(--black);
   font-weight: 500;
-  letter-spacing: 0.03em;
   line-height: 1.18;
+  font-size: 16px;
+  margin: 30px 0 10px 0;
 }
 .team-workplace {
   color: var(--grey);
   letter-spacing: 0.03em;
+  font-size: 16px;
+  margin: 0 0 30px 0;
 }
 .img-decoration {
   background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
 .project-title {
   font-weight: 700;
@@ -234,6 +263,24 @@ body {
 
 .footer {
   background-color: var(--background-dark);
+  padding: 60px 0;
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 215px;
+}
+.contact-footer {
+  margin: 20px 0 0 0;
+  font-style: normal;
+  line-height: 1.14;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  line-height: 1.14;
+  text-decoration: none;
 }
 .logo-studio-footer {
   font-family: 'Raleway';
