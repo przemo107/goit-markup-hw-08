@@ -19,6 +19,8 @@ body {
   --background-dark: #2f303a;
   --background-light: #f5f4fa;
   --background-lightgrey: #e5e5e5;
+  --border-project-card: #eeeeee;
+  --border-bottom-header: #ececec;
 }
 .container {
   width: 1200px;
@@ -31,6 +33,9 @@ body {
 }
 .main-background {
   background-color: var(--white);
+}
+.header-border-bottom {
+  border-bottom: 1px solid var(--border-bottom-header);
 }
 .logo-web {
   font-family: 'Raleway';
@@ -322,4 +327,7 @@ body {
 .link-list-footer .link-info-footer:hover,
 .link-list-footer .link-info-footer:focus {
   color: var(--blue);
+}
+.project-card {
+  border-bottom: 1px solid var(--border-project-card);
 }
