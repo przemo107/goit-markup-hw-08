@@ -15,6 +15,7 @@ body {
   --blue: #2196f3;
   --grey: #757575;
   --white: #ffffff;
+  --footer-gray: #ffffff99;
   --background-dark: #2f303a;
   --background-light: #f5f4fa;
   --background-lightgrey: #e5e5e5;
@@ -80,6 +81,10 @@ body {
 }
 .button-list {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 94px 0 0 0;
 }
 .btn {
   color: var(--white);
@@ -100,12 +105,16 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--background-light);
   color: var(--black);
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
   text-align: center;
   cursor: pointer;
-  border-width: 0px;
+  border-style: none;
   line-height: 1.62;
+  border-radius: 3px;
+  height: 38px;
+  padding: 6px 22px;
 }
 .button-list .btn-filter:hover,
 .button-list .btn-filter:focus {
@@ -118,6 +127,12 @@ body {
 }
 .project-list {
   list-style-type: none;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 94px;
 }
 .about-header {
   font-weight: 700;
@@ -267,20 +282,18 @@ body {
   width: 100%;
 }
 .footer-container {
-  display: flex;
   flex-direction: column;
   margin-left: 215px;
+  color: var(--white);
 }
 .contact-footer {
   margin: 20px 0 0 0;
   font-style: normal;
   line-height: 1.14;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: var(--white);
   line-height: 1.14;
-  text-decoration: none;
 }
 .logo-studio-footer {
   font-family: 'Raleway';
@@ -289,4 +302,24 @@ body {
   font-size: 26px;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+.adress-footer {
+  margin: 20px 0 0 0;
+  font-style: normal;
+}
+.link-list-footer {
+  list-style: none;
+}
+.link-list-footer li {
+  margin: 9px 0 9px 0;
+}
+.link-info-footer {
+  color: var(--footer-gray);
+  list-style: none;
+  text-decoration: none;
+  margin: 9px 0 9px 0;
+}
+.link-list-footer .link-info-footer:hover,
+.link-list-footer .link-info-footer:focus {
+  color: var(--blue);
 }
