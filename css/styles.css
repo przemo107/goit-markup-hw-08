@@ -31,6 +31,12 @@ body {
   width: 1600px;
   margin: 0 auto;
 }
+.section {
+  padding: 94px 0;
+}
+.no-padding {
+  padding: 0px;
+}
 .main-background {
   background-color: var(--white);
 }
@@ -80,9 +86,7 @@ body {
   display: flex;
   align-items: center;
   gap: 93px;
-  flex-direction: row;
   padding: 25px 0 24px 0;
-  display: flex;
 }
 .button-list {
   list-style-type: none;
@@ -233,6 +237,8 @@ body {
 }
 .project-category {
   letter-spacing: 0.03em;
+  font-size: 16px;
+  font-weight: 400;
   color: var(--grey);
   line-height: 1.87;
 }
