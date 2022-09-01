@@ -43,6 +43,13 @@ body {
 .header-border-bottom {
   border-bottom: 1px solid var(--border-bottom-header);
 }
+.our-feature-icon {
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-light);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
 .logo-web {
   font-family: 'Raleway';
   color: var(--blue);
