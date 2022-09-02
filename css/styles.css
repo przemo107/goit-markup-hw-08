@@ -22,6 +22,7 @@ body {
   --border-project-card: #eeeeee;
   --border-bottom-header: #ececec;
   --social-icon-color: #afb1b8;
+  --social-icon-background-color-footer: rgba(255, 255, 255, 0.1);
 }
 .container {
   width: 1200px;
@@ -390,4 +391,22 @@ body {
 }
 .project-card {
   border-bottom: 1px solid var(--border-project-card);
+}
+.footer-social-media-icon {
+  fill: var(--white);
+  background-color: var(--social-icon-background-color-footer);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.footer-social-media-icon:hover {
+  background-color: var(--blue);
+}
+.footer-social-media-container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 171px;
 }
