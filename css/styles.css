@@ -419,10 +419,11 @@ body {
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
+  margin-top: 18.62px;
   margin-left: 70px;
   margin-bottom: 20px;
 }
