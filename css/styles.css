@@ -219,7 +219,6 @@ body {
   background-color: var(--white);
   list-style-type: none;
   display: flex;
-  padding: 94px 0 0 0;
   justify-content: center;
   gap: 30px;
 }
