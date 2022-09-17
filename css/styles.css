@@ -29,6 +29,8 @@ body {
   --blue-overlay: rgba(33, 150, 243, 0.9);
   --background-backdrop: rgba(0, 0, 0, 0.2);
   --close-btn-modal-radius: rgba(0, 0, 0, 0.1);
+  --border-newsletter: rgba(255, 255, 255, 0.3);
+  --border-input-modal: rgba(33, 33, 33, 0.2);
 }
 .container {
   width: 1200px;
@@ -560,6 +562,9 @@ body {
   background-color: var(--white);
   opacity: 1;
   visibility: visible;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 .is-hidden {
   opacity: 0;
@@ -581,21 +586,29 @@ body {
   cursor: pointer;
 }
 .newsletter-form {
+  display: flex;
   color: var(--white);
   text-transform: uppercase;
   width: 570px;
   height: 86px;
   margin-left: 78px;
 }
-input {
+
+.newsletter-input {
+  color: var(--footer-gray);
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
   width: 358px;
   height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--border-newsletter);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: var(--background-dark);
   border-radius: 4px;
 }
-.form-input::placeholder {
+.newsletter-input::placeholder {
   color: var(--footer-gray);
   font-family: 'Roboto';
   font-weight: 400;
@@ -611,7 +624,6 @@ input {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
   margin-top: 18.62px;
@@ -625,10 +637,56 @@ input {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  /* margin-left: 12px; */
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  margin-left: 12px;
+  margin-top: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 .send-icon {
   fill: var(--white);
   width: 24px;
   height: 24px;
+  padding-left: 24px;
+}
+.modal-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid var(--border-input-modal);
+  border-radius: 4px;
+}
+.modal-input-coment {
+  width: 448px;
+  height: 120px;
+  border: 1px solid var(--border-input-modal);
+  border-radius: 4px;
+}
+.modal-form-container {
+  position: relative;
+  top: 40px;
+  left: 40px;
+}
+.modal-input-icon-person {
+  fill: var(--black);
+  position: absolute;
+  top: 50px;
+  left: 15px;
+}
+.modal-input-icon-tel {
+  fill: var(--black);
+  position: absolute;
+  top: 110px;
+  left: 15px;
+}
+.modal-input-icon-email {
+  fill: var(--black);
+  position: absolute;
+  top: 168px;
+  left: 15px;
 }

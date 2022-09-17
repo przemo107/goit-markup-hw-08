@@ -500,20 +500,23 @@
             <label>
               <h4 class="newsletter-label">Zapisz się do newslettera</h4>
               <input
-                class="form-input"
+                class="newsletter-input"
                 type="email"
                 name="email"
                 placeholder="E-mail"
               />
             </label>
             <button class="submit-btn" type="submit">
-              Zapisz się<svg class="send-icon">
-                <use
-                  xlink:href="./images/icons.svg#icon-send"
-                  width="24"
-                  height="24"
-                ></use>
-              </svg>
+              Zapisz się
+              <div class="send-icon">
+                <svg>
+                  <use
+                    xlink:href="./images/icons.svg#icon-send"
+                    width="24"
+                    height="24"
+                  ></use>
+                </svg>
+              </div>
             </button>
           </form>
         </div>
@@ -522,6 +525,52 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
+        <div class="modal-form-container">
+          <form>
+            <label class="modal-label">
+              <h4>Zostaw swoje dane w formularzu poniżej</h4>
+              <p>Imie</p>
+              <svg class="modal-input-icon-person">
+                <use
+                  xlink:href="./images/icons.svg#icon-person"
+                  width="12"
+                  height="12"
+                ></use>
+              </svg>
+              <input class="modal-input" type="text" name="name" />
+            </label>
+            <label class="modal-label">
+              <p>Telefon</p>
+              <svg class="modal-input-icon-tel">
+                <use
+                  xlink:href="./images/icons.svg#icon-tel"
+                  width="13"
+                  height="13"
+                ></use>
+              </svg>
+              <input class="modal-input" type="tel" name="phone" />
+            </label>
+            <label class="modal-label">
+              <p>Email</p>
+              <svg class="modal-input-icon-email">
+                <use
+                  xlink:href="./images/icons.svg#icon-email"
+                  width="15"
+                  height="12"
+                ></use>
+              </svg>
+              <input class="modal-input" type="email" name="email" />
+            </label>
+            <label>
+              <p>Komnetarz</p>
+              <input class="modal-input-coment" type="text" name="coment" />
+            </label>
+            <label>
+              <input type="checkbox" name="checkbox" />
+            </label>
+            <button class="submit-btn" type="submit">Wyślij</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src=".js/modal.js"></script>
