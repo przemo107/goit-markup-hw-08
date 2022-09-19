@@ -527,9 +527,11 @@
         <button type="button" class="close-btn" data-modal-close>X</button>
         <div class="modal-form-container">
           <form>
-            <label class="modal-label">
-              <h4>Zostaw swoje dane w formularzu poniżej</h4>
-              <p>Imie</p>
+            <label>
+              <h5 class="form-header">
+                Zostaw swoje dane w formularzu poniżej
+              </h5>
+              <p class="label-name">Imie</p>
               <svg class="modal-input-icon-person">
                 <use
                   xlink:href="./images/icons.svg#icon-person"
@@ -539,8 +541,8 @@
               </svg>
               <input class="modal-input" type="text" name="name" />
             </label>
-            <label class="modal-label">
-              <p>Telefon</p>
+            <label>
+              <p class="label-name">Telefon</p>
               <svg class="modal-input-icon-tel">
                 <use
                   xlink:href="./images/icons.svg#icon-tel"
@@ -550,8 +552,8 @@
               </svg>
               <input class="modal-input" type="tel" name="phone" />
             </label>
-            <label class="modal-label">
-              <p>Email</p>
+            <label>
+              <p class="label-name">Email</p>
               <svg class="modal-input-icon-email">
                 <use
                   xlink:href="./images/icons.svg#icon-email"
@@ -562,11 +564,21 @@
               <input class="modal-input" type="email" name="email" />
             </label>
             <label>
-              <p>Komnetarz</p>
-              <input class="modal-input-coment" type="text" name="coment" />
+              <p class="label-name">Komentarz</p>
+              <input
+                class="modal-input-coment"
+                type="text"
+                placeholder="Wprowadź tekst"
+                name="coment"
+              />
             </label>
-            <label>
+            <label class="checkbox-label">
               <input type="checkbox" name="checkbox" />
+              <p class="checkbox-label-privacy">
+                Oświadczam iż akceptuję
+                <span class="blue-text-modal">Regulamin</span> i
+                <span class="blue-text-modal">Politykę Prywatności.</span>
+              </p>
             </label>
             <button class="submit-btn" type="submit">Wyślij</button>
           </form>

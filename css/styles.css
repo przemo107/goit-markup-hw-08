@@ -31,6 +31,7 @@ body {
   --close-btn-modal-radius: rgba(0, 0, 0, 0.1);
   --border-newsletter: rgba(255, 255, 255, 0.3);
   --border-input-modal: rgba(33, 33, 33, 0.2);
+  --placeholder-form-coment: rgba(117, 117, 117, 0.5);
 }
 .container {
   width: 1200px;
@@ -593,7 +594,6 @@ body {
   height: 86px;
   margin-left: 78px;
 }
-
 .newsletter-input {
   color: var(--footer-gray);
   font-family: 'Roboto';
@@ -642,8 +642,8 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  margin-left: 12px;
-  margin-top: 54px;
+  margin-left: 121px;
+  margin-top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -659,13 +659,17 @@ body {
   width: 448px;
   height: 40px;
   border: 1px solid var(--border-input-modal);
+  padding-left: 35px;
   border-radius: 4px;
+  margin-bottom: 10px;
 }
 .modal-input-coment {
   width: 448px;
   height: 120px;
   border: 1px solid var(--border-input-modal);
   border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
 }
 .modal-form-container {
   position: relative;
@@ -675,18 +679,71 @@ body {
 .modal-input-icon-person {
   fill: var(--black);
   position: absolute;
-  top: 50px;
+  width: 12px;
+  height: 12px;
+  top: 69px;
   left: 15px;
 }
 .modal-input-icon-tel {
   fill: var(--black);
   position: absolute;
-  top: 110px;
+  width: 13px;
+  height: 13px;
+  top: 135px;
   left: 15px;
 }
 .modal-input-icon-email {
   fill: var(--black);
   position: absolute;
-  top: 168px;
+  width: 15px;
+  height: 12px;
+  top: 204px;
   left: 15px;
+}
+.form-header {
+  margin: 8px 40px 12px 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+.label-name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--grey);
+  padding-bottom: 4px;
+}
+.checkbox-label {
+  display: flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--grey);
+  width: 448px;
+  padding: 20px 0 30px 15px;
+}
+.checkbox-label-privacy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--grey);
+  padding-left: 8px;
+}
+.blue-text-modal {
+  color: var(--blue);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.modal-input-coment::placeholder {
+  color: var(--placeholder-form-coment);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
