@@ -663,6 +663,10 @@ body {
   border-radius: 4px;
   margin-bottom: 10px;
 }
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--blue);
+}
 .modal-input-coment {
   width: 448px;
   height: 120px;
