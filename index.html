@@ -572,15 +572,29 @@
               >
               </textarea>
             </label>
-            <label class="checkbox-label">
-              <input type="checkbox" name="checkbox" />
-              <p class="checkbox-label-privacy">
-                Oświadczam iż akceptuję
-                <span class="blue-text-modal">Regulamin</span> i
-                <span class="blue-text-modal">Politykę Prywatności.</span>
-              </p>
-            </label>
-            <button class="submit-btn" type="submit">Wyślij</button>
+            <input
+              class="modal-form-policy"
+              type="checkbox"
+              id="user-policy"
+              name="policy"
+            />
+            <!-- <svg class="icon-checked">
+              <use
+                xlink:href="./images/icons.svg#icon-checked"
+                width="11"
+                height="8"
+              ></use>
+            </svg> -->
+            <label for="user-policy" class="modal-form-policy-text"
+              >Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</label
+            >
+            <!-- <p class="checkbox-label-privacy">
+              Oświadczam iż akceptuję
+              <span class="blue-text-modal">Regulamin</span> i
+              <span class="blue-text-modal">Politykę Prywatności.</span>
+            </p> -->
+
+            <button class="submit-btn-modal" type="submit">Wyślij</button>
           </form>
         </div>
       </div>
