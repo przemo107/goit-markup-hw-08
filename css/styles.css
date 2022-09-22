@@ -775,6 +775,9 @@ body {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center;
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 .modal-form-policy:checked + .modal-form-policy-text::before {
   border-style: none;
@@ -782,13 +785,23 @@ body {
   background-image: url('./images/icons.svg#icon-checked');
 }
 .icon-checked {
-  fill: var(--black);
+  fill: var(--white);
   width: 11px;
   height: 8px;
   display: flex;
   position: absolute;
   top: 390px;
   left: 1px;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 .blue-text-modal {
   color: var(--blue);
