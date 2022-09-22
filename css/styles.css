@@ -772,14 +772,17 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--grey);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
 }
 .modal-form-policy:checked + .modal-form-policy-text::before {
-  background-color: var(--blue);
   border-style: none;
-  background-image: url(./images/icons.svg#icon-checked);
+  background-color: var(--blue);
+  background-image: url('./images/icons.svg#icon-checked');
 }
 .icon-checked {
-  fill: var(--white);
+  fill: var(--black);
   width: 11px;
   height: 8px;
   display: flex;
