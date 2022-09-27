@@ -525,75 +525,74 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
-        <div class="modal-form-container">
-          <form>
-            <label>
-              <h5 class="form-header">
-                Zostaw swoje dane w formularzu poniżej
-              </h5>
-              <p class="label-name">Imie</p>
-              <svg class="modal-input-icon-person">
-                <use
-                  xlink:href="./images/icons.svg#icon-person"
-                  width="12"
-                  height="12"
-                ></use>
-              </svg>
-              <input class="modal-input" type="text" name="name" />
-            </label>
-            <label>
-              <p class="label-name">Telefon</p>
-              <svg class="modal-input-icon-tel">
-                <use
-                  xlink:href="./images/icons.svg#icon-tel"
-                  width="13"
-                  height="13"
-                ></use>
-              </svg>
-              <input class="modal-input" type="tel" name="phone" />
-            </label>
-            <label>
-              <p class="label-name">Email</p>
-              <svg class="modal-input-icon-email">
-                <use
-                  xlink:href="./images/icons.svg#icon-email"
-                  width="15"
-                  height="12"
-                ></use>
-              </svg>
-              <input class="modal-input" type="email" name="email" />
-            </label>
-            <label>
-              <p class="label-name">Komentarz</p>
-              <textarea
-                class="modal-input-coment"
-                placeholder="Wprowadź tekst"
-                name="coment"
-              >
-              </textarea>
-            </label>
+        <h5 class="form-header">Zostaw swoje dane w formularzu poniżej</h5>
+        <form class="modal-form">
+          <label class="form-label" for="input_name"
+            >Imię
             <input
-              class="modal-form-policy visually-hidden"
-              type="checkbox"
-              id="user-policy"
-              name="policy"
+              class="modal-form-input"
+              type="name"
+              name="name"
+              id="input_name"
             />
-            <label for="user-policy" class="modal-form-policy-text"
-              ><svg class="icon-checked">
-                <use
-                  xlink:href="./images/icons.svg#icon-checked"
-                  width="11"
-                  height="8"
-                ></use>
-              </svg>
-              Oświadczam iż akceptuję<a class="blue-text-modal" href="#"
+            <svg class="modal-input-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="form-label" for="input_phone"
+            >Telefon
+            <input
+              class="modal-form-input"
+              type="phone"
+              name="phone"
+              id="input_phone"
+            />
+            <svg class="modal-input-icon" width="13" height="13">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+          </label>
+          <label class="form-label" for="input_email"
+            >Email
+            <input
+              class="modal-form-input"
+              type="email"
+              name="email"
+              id="input_email"
+            />
+            <svg class="modal-input-icon" width="15" height="12">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="form-label" for="text_comment"
+            >Komentarz
+            <textarea
+              class="modal-form-comment"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </label>
+          <label class="terms-checkbox">
+            <input
+              class="input-check"
+              type="checkbox"
+              name="check"
+              value="check"
+            />
+            <svg class="icon-check" width="16" height="15">
+              <use href="./images/icons.svg#icon-checked"></use>
+            </svg>
+            <span class="terms-privacy">
+              Oświadczam iż akceptuję
+              <a class="terms-privacy-link" href="#" rel="noreferrer noopener"
                 >Regulamin</a
               >
-              i <a class="blue-text-modal" href="#">Politykę Prywatności.</a>
-            </label>
-            <button class="submit-btn-modal" type="submit">Wyślij</button>
-          </form>
-        </div>
+              i
+              <a class="terms-privacy-link" href="#" rel="noreferrer noopener"
+                >Politykę Prywatności.</a
+              ></span
+            >
+          </label>
+          <button class="submit-btn-modal" type="submit">Wyśij</button>
+        </form>
       </div>
     </div>
     <script src=".js/modal.js"></script>
