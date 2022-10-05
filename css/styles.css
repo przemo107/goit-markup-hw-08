@@ -682,7 +682,7 @@ input:checked + .modal__icon-check {
   gap: 8px;
   margin: 94px 0 0 0;
 }
-.btn-filter {
+.button-list__btn-filter {
   font-family: 'Roboto', sans-serif;
   background-color: var(--background-light);
   color: var(--black);
@@ -701,14 +701,14 @@ input:checked + .modal__icon-check {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-list .btn-filter:hover,
-.button-list .btn-filter:focus {
+.button-list .button-list__btn-filter:hover,
+.button-list .button-list__btn-filter:focus {
   color: var(--white);
   background-color: var(--blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.active-btn-filter {
+.button-list__active-btn-filter {
   color: var(--white);
   background-color: var(--blue);
 }
@@ -721,26 +721,26 @@ input:checked + .modal__icon-check {
   margin-top: 50px;
   margin-bottom: 94px;
 }
-.project-card {
+.project-list__project-card {
   border-bottom: 1px solid var(--border-project-card);
   transition-property: box-shadow;
   transition-delay: 0;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-card:hover {
+.project-list__project-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
-.box-card {
+.project-list__box-card {
   position: relative;
   overflow: hidden;
 }
-.box-card:hover .overlay {
+.project-list__box-card:hover .project-list__overlay {
   transform: translateY(0);
 }
-.overlay {
+.project-list__overlay {
   background-color: var(--blue-overlay);
   position: absolute;
   top: 0;
@@ -754,7 +754,7 @@ input:checked + .modal__icon-check {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay > p {
+.project-list__overlay > p {
   color: var(--white);
   font-size: 18px;
   font-weight: 400;
@@ -762,7 +762,7 @@ input:checked + .modal__icon-check {
   letter-spacing: 0.03em;
   padding: 49px 45px 49px 24px;
 }
-.project-title {
+.project-list__project-title {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.06em;
@@ -770,7 +770,7 @@ input:checked + .modal__icon-check {
   line-height: 2;
   padding: 20px 0 0 24px;
 }
-.project-category {
+.project-list__project-category {
   letter-spacing: 0.03em;
   font-size: 16px;
   font-weight: 400;
