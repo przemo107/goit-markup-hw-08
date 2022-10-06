@@ -1,0 +1,14 @@
+.section__skills {
+  background-color: var(--white);
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.section__our-feature-icon {
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-light);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}

@@ -1,0 +1,19 @@
+.modal__input-check {
+  position: relative;
+  opacity: 0;
+}
+.modal__icon-check {
+  position: absolute;
+  fill: var(--white);
+  top: 10%;
+  right: 97%;
+  border: 2px solid var(--black);
+}
+input:checked + .modal__icon-check {
+  fill: var(--white);
+  border-color: var(--blue);
+  background-color: var(--blue);
+  border-radius: 2px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

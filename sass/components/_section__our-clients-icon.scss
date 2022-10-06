@@ -1,0 +1,25 @@
+.section__our-clients-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 0;
+}
+.section__our-clients-icon {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: var(--social-icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: fill;
+  transition-delay: 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section__our-clients-icon:hover {
+  fill: var(--blue);
+  border-color: var(--blue);
+  cursor: pointer;
+}
