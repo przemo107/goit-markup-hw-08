@@ -29,6 +29,17 @@ body {
   --placeholder-form-coment: rgba(117, 117, 117, 0.5);
 }
 
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 93px;
+  padding: 25px 0 24px 0;
+}
+
 .backdrop {
   position: fixed;
   left: 0;
