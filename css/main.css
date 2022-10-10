@@ -297,7 +297,7 @@ body {
     padding: 200px 15px;
     background-position: center;
     background-size: cover;
-    width: 50%;
+    width: 41%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -312,6 +312,13 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .main-header__main-header-text {
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -340,6 +347,13 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .main-header__main-header-text {
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
   }
 }
 .btn {
