@@ -1,8 +1,5 @@
 @import './utils/variables';
 
-@import './components/backdrop';
-@import './components/is-hidden';
-
 @import './components/common';
 @import './components/page-container';
 
@@ -20,18 +17,10 @@
 @import './components/team-social-icons';
 @import './components/section__our-clients-icon';
 @import './components/footer';
-@import './components/join-us-header';
-@import './components/footer__social-media-icons';
 @import './components/newsletter';
 @import './components/newsletter__submit-btn';
 @import './components/newsletter__send-icon';
 @import './components/modal';
-@import './components/modal__close-btn';
-@import './components/modal__modal-form';
-@import './components/modal__terms-checkbox';
-@import './components/modal_input-check';
-@import './components/modal__terms-privacy';
-@import './components/modal__submit-btn';
 
 @import './components/header-border-bottom';
 @import './components/button-list-filter';

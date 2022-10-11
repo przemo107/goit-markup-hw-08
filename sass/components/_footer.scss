@@ -43,3 +43,37 @@
 .footer__link-list .footer__link-info:focus {
   color: var(--blue);
 }
+.join-us-header {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-top: 18.62px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+.footer__social-media-icons {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-left: 70px;
+  padding: 0;
+}
+.footer__social-media-icon {
+  fill: var(--white);
+  background-color: var(--social-icon-background-color-footer);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-delay: 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__social-media-icon:hover {
+  background-color: var(--blue);
+  cursor: pointer;
+}

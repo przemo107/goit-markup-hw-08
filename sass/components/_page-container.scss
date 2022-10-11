@@ -1,27 +1,5 @@
 .page-container {
-  width: 100%;
-  padding: 0 15px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 }
-
-@media screen and (min-width: 480px) {
-  .page-container {
-    min-width: 480px;
-    padding: 0 15px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .page-container {
-    min-width: 768px;
-    padding: 0 15px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .page-container {
-    min-width: 1200px;
-    padding: 0 215px;
-  }
-}
-// / .page-container {
-// //   width: 1200px;
-// //   margin: 0 auto;
-// // }
