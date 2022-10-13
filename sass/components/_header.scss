@@ -1,0 +1,193 @@
+.background {
+  @include flexcenter(column);
+  min-width: 320px;
+  max-width: 1600px;
+  height: 400px;
+  gap: 30px;
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__order-button {
+    width: 200px;
+    height: 50px;
+    font-weight: map-get($map: $font-weight, $key: bold);
+    line-height: 188%;
+    letter-spacing: 0.06em;
+    color: $secondaryfontColor;
+    background: $activeColor;
+    box-shadow: 0px 4px 4px $shadowbuttonColor;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px;
+  border-bottom: 1px solid $contactsColor;
+  &__link {
+    text-decoration: none;
+    color: $logoblackColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:visited {
+      color: $fontmainColor;
+    }
+    &:hover,
+    &:focus {
+      color: $activeColor;
+      fill: $activeColor;
+    }
+  }
+  &--logo-one {
+    font-weight: map-get($map: $font-weight, $key: bold);
+    font-size: map-get($map: $font-size, $key: logo);
+    font-family: $logo-font;
+    line-height: 100%;
+    color: $activeColor;
+  }
+  &--logo-two {
+    font-weight: map-get($map: $font-weight, $key: bold);
+    font-size: map-get($map: $font-size, $key: logo);
+    font-family: $logo-font;
+    line-height: 100%;
+    color: $logoblackColor;
+  }
+}
+.navigation {
+  display: none;
+  &__portable-menu {
+    width: 20px;
+    height: 20px;
+  }
+}
+.contacts {
+  display: none;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .background {
+    background: $shadowbackgroundColor url(../images/bg@2x.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    &__list {
+      display: flex;
+      gap: 46px;
+    }
+    &__list-item {
+      font-weight: map-get($map: $font-weight, $key: medium);
+      font-size: map-get($map: $font-size, $key: normal);
+      line-height: 100%;
+      letter-spacing: 0.02em;
+    }
+    &--active-site {
+      color: $activeColor;
+    }
+    &--active-site::after {
+      content: '';
+      position: relative;
+      display: block;
+      top: 29px;
+      width: 58px;
+      height: 4px;
+      background-color: $activeColor;
+      border-radius: 2px;
+    }
+  }
+  .contacts {
+    @include flexdirection(column);
+    gap: 10px;
+    margin-left: auto;
+    &__link {
+      @include flexdirection(row);
+      align-items: center;
+      gap: 10px;
+      font-weight: map-get($map: $font-weight, $key: medium);
+      font-size: map-get($map: $font-size, $key: normal);
+      line-height: 100%;
+      letter-spacing: 0.02em;
+      color: $contactsColor;
+      fill: $contactsColor;
+    }
+    &__link--icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .background {
+    height: 600px;
+    & h1 {
+      font-size: 44px;
+    }
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    &__list {
+      display: flex;
+      gap: 46px;
+    }
+    &__list-item {
+      font-weight: map-get($map: $font-weight, $key: medium);
+      font-size: map-get($map: $font-size, $key: normal);
+      line-height: 100%;
+      letter-spacing: 0.02em;
+    }
+    &--active-site {
+      color: $activeColor;
+    }
+    &--active-site::after {
+      content: '';
+      position: relative;
+      display: block;
+      top: 21px;
+      width: 58px;
+      height: 4px;
+      background-color: $activeColor;
+      border-radius: 2px;
+    }
+  }
+  .contacts {
+    @include flexdirection(row);
+    gap: 30px;
+    margin-left: auto;
+    &__link {
+      @include flexdirection(row);
+      align-items: center;
+      gap: 10px;
+      font-weight: map-get($map: $font-weight, $key: medium);
+      font-size: map-get($map: $font-size, $key: normal);
+      line-height: 100%;
+      letter-spacing: 0.02em;
+      color: $contactsColor;
+      fill: $contactsColor;
+    }
+    &__link--icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

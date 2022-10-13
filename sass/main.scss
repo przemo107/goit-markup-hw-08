@@ -1,28 +1,8 @@
 @import './utils/variables';
-
-@import './components/common';
-@import './components/page-container';
-
-@import './components/page-header';
-@import './components/logo';
-@import './components/nav-links';
-@import './components/contact-info';
-
-@import './components/main-header';
-@import './components/btn-main-header';
-
-@import './components/section__skills';
-@import './components/section__about';
-@import './components/section__team';
-@import './components/team-social-icons';
-@import './components/section__our-clients-icon';
+@import './components/header';
+@import './components/index-main';
 @import './components/footer';
-@import './components/newsletter';
-@import './components/newsletter__submit-btn';
-@import './components/newsletter__send-icon';
 @import './components/modal';
-
-@import './components/header-border-bottom';
-@import './components/button-list-filter';
-@import './components/nav-links';
-@import './components/project-list';
+@import './components/general';
+@import './components/mobile-menu';
+@import './components/portfolio-main';

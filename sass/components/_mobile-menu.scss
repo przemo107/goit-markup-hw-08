@@ -1,0 +1,106 @@
+.menu-toggle {
+  // min-height: 40px;
+  // min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 0 48px 40px;
+  background-color: $secondaryfontColor;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: $fontmainColor;
+}
+.mobile-menu {
+  text-decoration: none;
+  font-weight: map-get($map: $font-weight, $key: medium);
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+.list-pages {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 36px;
+  &__link {
+    display: inline;
+    color: $fontmainColor;
+    font-size: map-get($map: $font-size, $key: h2);
+    line-height: 47px;
+    color: $fontmainColor;
+    &:hover,
+    &:focus {
+      color: $activeColor;
+    }
+  }
+}
+.list-contacts {
+  position: absolute;
+  bottom: 134px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  &__phone {
+    font-size: map-get($map: $font-size, $key: h2);
+    line-height: 40px;
+    color: $activeColor;
+  }
+  &__mail {
+    font-size: map-get($map: $font-size, $key: logo);
+    line-height: 28px;
+    color: $contactsColor;
+  }
+}
+.list-social {
+  display: flex;
+  flex-flow: row wrap;
+  position: absolute;
+  bottom: 48px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  &__item {
+    font-size: map-get($map: $font-size, $key: overlay);
+    line-height: 122%;
+    color: $activeColor;
+    &--link {
+      color: inherit;
+    }
+  }
+}
+.list-social__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(153, 151, 151, 0.75);
+}
+.active-btn {
+  width: 20px;
+  height: 20px;
+  &:hover,
+  &:focus {
+    fill: $activeColor;
+  }
+}

@@ -1,29 +1,76 @@
-body {
-  font-family: 'Roboto', 'Raleway', sans-serif;
-  color: var(--black);
-  background-color: var(--white);
-  width: 1600px;
-  margin: 0 auto;
+
+// colors
+$fontmainColor: rgb(33, 33, 33);
+$activeColor: rgb(33, 150, 243);
+$headerborderColor: rgb(236, 236, 236);
+$shadowbackgroundColor: rgba(47, 48, 58, 40%);
+$secondaryfontColor: rgb(255, 255, 255);
+$shadowbuttonColor: rgba(0, 0, 0, 0.15);
+$logoblackColor: rgb(0, 0, 0);
+$contactsColor: rgb(117, 117, 117);
+$backgroundiconColor: rgb(245, 245, 250);
+$shadowteamColor: rgba(0, 0, 0, 25%);
+$descriptionColor: rgba(47, 48, 58, 80%);
+$membercontainershadow1: rgba(0, 0, 0, 0.12);
+$membercontainershadow2: rgba(0, 0, 0, 0.14);
+$membercontainershadow3: rgba(0, 0, 0, 0.2);
+$socialiconColor:  rgb(175, 177, 184);
+$footerColor:  rgb(47, 48, 58);
+$footercontactsColor: rgba(255, 255, 255, 0.6);
+$footericonsbackgroundColor: rgba(255, 255, 255, 0.1);
+$newsletterinputborderColor: rgba(255, 255, 255, 0.3);
+$newslettershadowColor: rgba(47, 48, 58, 1);
+$carditemColor: rgb(238, 238, 238);
+$carditemhoverColor1: rgba(0, 0, 0, 0.12);
+$carditemhoverColor2: rgba(0, 0, 0, 0.06);
+$carditemhoverColor3: rgba(0, 0, 0, 0.16);
+$backgroundbackdropColor: rgba(0, 0, 0, 0.1);
+$modalinputColor: rgba(33, 33, 33, 0.2);
+// colors
+// fonts
+$font-weight: (
+    'normal': 400,
+    'medium': 500,
+    'bold': 700,
+    'bolder': 900,
+);
+
+$font-size: (
+    'light': 12px,
+    'normal': 14px,
+    'bolder': 16px,
+    'overlay': 18px,
+    'h4': 20px,
+    'logo': 26px,
+    'h2': 36px,
+    'h1': 44px,
+);
+$normal-font: "Roboto", sans-serif;
+$logo-font: "raleway", sans-serif;
+// fonts
+// mixins
+@mixin flexcenter ($direction) {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: $direction;
 }
-:root {
-  --black: #212121;
-  --black-logo: #000000;
-  --blue: #2196f3;
-  --grey: #757575;
-  --white: #ffffff;
-  --footer-gray: #ffffff99;
-  --background-dark: #2f303a;
-  --background-light: #f5f4fa;
-  --background-lightgrey: #e5e5e5;
-  --border-project-card: #eeeeee;
-  --border-bottom-header: #ececec;
-  --social-icon-color: #afb1b8;
-  --social-icon-background-color-footer: rgba(255, 255, 255, 0.1);
-  --label-bg-color: rgba(47, 48, 58, 0.8);
-  --blue-overlay: rgba(33, 150, 243, 0.9);
-  --background-backdrop: rgba(0, 0, 0, 0.2);
-  --close-btn-modal-radius: rgba(0, 0, 0, 0.1);
-  --border-newsletter: rgba(255, 255, 255, 0.3);
-  --border-input-modal: rgba(33, 33, 33, 0.2);
-  --placeholder-form-coment: rgba(117, 117, 117, 0.5);
+@mixin flexdirection ($direction) {
+    display: flex;
+	flex-direction: $direction;
 }
+@mixin hover($background-color, $color) {
+    background-color: $background-color ;
+    color: $color ;
+}
+@mixin color ($color) {
+    color: $color;
+}
+@mixin positioncenter {
+    position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}
+    
+// mixins
